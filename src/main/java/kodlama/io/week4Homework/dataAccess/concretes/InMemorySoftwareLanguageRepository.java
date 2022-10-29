@@ -2,10 +2,12 @@ package kodlama.io.week4Homework.dataAccess.concretes;
 
 import kodlama.io.week4Homework.dataAccess.abstracts.SoftwareLanguageRepository;
 import kodlama.io.week4Homework.entities.concretes.SoftwareLanguage;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class InMemorySoftwareLanguageRepository implements SoftwareLanguageRepository {
 
     private List<SoftwareLanguage> softwareLanguages;
